@@ -1,0 +1,18 @@
+#服务端口号
+server:
+  port: 80
+
+#day2配置类语法练习
+#person:
+#  id: 1
+#  name: "wyj"
+#  isAdult: true
+#  phone: {name: 'mi',size: 4.7}
+#  pets:
+#    - cat
+#    - dog
+#  department:
+#    name: "zhdj"
+#    feel: "not bad"
+
+
