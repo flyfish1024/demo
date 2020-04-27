@@ -3,6 +3,7 @@ package com.flyfish.day2;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 /**
  * @ClassName Department
@@ -13,6 +14,7 @@ import lombok.Setter;
  **/
 @Getter
 @Setter
+@ToString
 public class Department {
     private String name;
     private String feel;
