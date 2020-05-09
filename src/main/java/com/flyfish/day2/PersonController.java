@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @ClassName PersonController
- * @Description: TODO
+ * @Description: 配置文件测试
  * @Author 王飞鱼
  * @Date 2020-4-26
  * @Version V1.0
@@ -17,10 +17,20 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class PersonController {
     @Autowired
     Person person;
+    @Autowired
+    PersonValue personValue;
 
     @RequestMapping("/get")
     @ResponseBody
     public String get(){
         return person.toString();
+    }
+
+
+
+    @RequestMapping("/getValue")
+    @ResponseBody
+    public String getValue(){
+        return personValue.toString();
     }
 }

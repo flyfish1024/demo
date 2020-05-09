@@ -29,7 +29,7 @@ import java.util.Map;
 public class Person {
     private int id;
     private String name;
-    private boolean isAdult;
+    private boolean adult;
     private Map<Object,Object> phone;
     private List<Object> pets;
     private Department department;
