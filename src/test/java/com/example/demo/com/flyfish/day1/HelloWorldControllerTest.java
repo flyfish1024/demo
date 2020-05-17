@@ -1,6 +1,5 @@
 package com.example.demo.com.flyfish.day1;
 
-import com.flyfish.day2.PersonController;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
