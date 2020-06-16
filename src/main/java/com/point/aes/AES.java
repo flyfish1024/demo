@@ -120,22 +120,24 @@ public class AES {
 
 	public static void main(String[] args) {
 		try {
-			File file = new File("C:\\Users\\王飞鱼\\Desktop\\2020-05-09 13_08_48_146e2f38ec46471895817bbd7b886ff6.sql");
+			File file = new File("C:\\Users\\王飞鱼\\Desktop\\2020-06-11 13_37_57_0a6b70e807e749a09e2a91cce3d017b4.sql");
 			String line="";
 			BufferedReader reader=new BufferedReader(new FileReader(file));
 
-			File fileOut = new File("C:\\Users\\王飞鱼\\Desktop\\解密.sql");
+			File fileOut = new File("C:\\Users\\王飞鱼\\Desktop\\解密2020-06-11 13_37_57.sql");
 			BufferedWriter writer=new BufferedWriter(new FileWriter(fileOut));
 			while ((line=reader.readLine())!=null){
 				String sql = AES.decryptFromBase64(line,"rsfnDKwYlpkwPMIzQpmjLQ==");
 				writer.write(sql);
 				writer.newLine();
 			}
+			writer.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
+
 		}
 	}
 }
